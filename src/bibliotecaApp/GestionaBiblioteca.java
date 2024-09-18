@@ -3,6 +3,11 @@ package bibliotecaApp;
 public class GestionaBiblioteca {
 	
 	public static void createData() {
+
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("Bienvenido a la bibliotecaApp");
 		Biblioteca biblioteca1 = new Biblioteca("La Colmena", "Calle Pepito Perez");
 		
 		Libro libro1 = new Libro(1, "Cien años de soledad", "Gabriel", 1967, GeneroLibro.DRAMA, 5);
@@ -14,15 +19,12 @@ public class GestionaBiblioteca {
         Usuario usuario1 = new Usuario("U001", "Juan", "Lolailo", "juan.lolailo@example.com", "555-1234");
         Usuario usuario2 = new Usuario("U002", "Ana", "Mellan", "ana.mellan@example.com", "555-5678");
         Usuario usuario3 = new Usuario("U003", "Luis", "Cobol", "luis.cobol@example.com", "555-8765");
-        Usuario usuario4 = new Usuario("U004", "María", "De la O", "maria.o@example.com", "555-4321");
+        Usuario usuario4 = new Usuario("U004", "María", "O", "maria.o@example.com", "555-4321");
         Usuario usuario5 = new Usuario("U005", "Carlos", "Sainz", "carlos.sainz@example.com", "555-6789");
         
         biblioteca1.addLibro(libro1,libro2,libro3,libro4,libro5);
         biblioteca1.addUsuario(usuario1,usuario2,usuario3,usuario4,usuario5);
-	}
-	
-	public static void main(String[] args) {
-		System.out.println("Bienvenido a la bibliotecaApp");
-		createData();
+        
+		System.out.println(libro1.getTitulo());
 	}
 }
