@@ -1,8 +1,5 @@
 package bibliotecaApp;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class GestionaBiblioteca {
 
 	public static void createData() {
@@ -55,18 +52,19 @@ public class GestionaBiblioteca {
 
 		biblioteca1.returnPrestamo(prestamo8);
 
+		System.out.println("\nConsulta disponibilidad: ");
 		libro3.consultaDisponibilidad();
 
-		System.out.println("Registro de prestamos: ");
+		System.out.println("\nRegistro de prestamos: ");
 		biblioteca1.mostrarRegistro();
 
-		System.out.println("Libros mas prestados: ");
+		System.out.println("\nLibros mas prestados: ");
 		biblioteca1.imprimirTop10LibrosMasPrestados();
 
-		System.out.println("Usuarios con mas prestamos: ");
+		System.out.println("\nUsuarios con mas prestamos: ");
 		biblioteca1.imprimirUsuariosConPrestamos();
 
-		System.out.println("Map de libros infantiles: ");
+		System.out.println("\nMap de libros infantiles: ");
 		biblioteca1.imprimirLibrosInfantil();
 
 	}
