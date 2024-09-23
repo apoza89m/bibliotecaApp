@@ -8,6 +8,7 @@ public class Libro {
 	private int anioPublicacion;
 	private GeneroLibro genero;
 	private int ejemplosDisponibles;
+	private int contadorPrestamos;
 
 	public int getId() {
 		return id;
@@ -24,6 +25,21 @@ public class Libro {
 		this.anioPublicacion = anioPublicacion;
 		this.genero = genero;
 		this.ejemplosDisponibles = ejemplosDisponibles;
+		this.contadorPrestamos = 0;
+		
+	}
+	
+	public void retirarLibro() {
+		ejemplosDisponibles--;
+	    contadorPrestamos++;
+	}
+	
+	public void devolverLibro() {
+	    ejemplosDisponibles++;
+	}
+
+	public void consultaDisponibilidad() {
+		System.out.println("El libro " + this.titulo + " tiene " + this.ejemplosDisponibles + " unidades");
 	}
 
 	public void setId(int id) {
@@ -69,5 +85,15 @@ public class Libro {
 	public void setEjemplosDisponibles(int ejemplosDisponibles) {
 		this.ejemplosDisponibles = ejemplosDisponibles;
 	}
+
+	public int getContadorPrestamos() {
+		return contadorPrestamos;
+	}
+
+	public void setContadorPrestamos(int contadorPrestamos) {
+		this.contadorPrestamos = contadorPrestamos;
+	}
+	
+	
 
 }

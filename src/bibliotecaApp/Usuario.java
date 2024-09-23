@@ -7,6 +7,7 @@ public class Usuario {
 	private String apellido;
 	private String correoElectronico;
 	private String telefono;
+	private int contadorPrestamos;
 	
 	
 	public Usuario(String id, String nombre, String apellido, String correoElectronico, String telefono) {
@@ -15,8 +16,18 @@ public class Usuario {
 		this.apellido = apellido;
 		this.correoElectronico = correoElectronico;
 		this.telefono = telefono;
+		this.contadorPrestamos = 0;
 	}
 	
+	
+    public void incrementarPrestamos() {
+    	contadorPrestamos++;
+    }
+
+    public int getContadorPrestamos() {
+        return contadorPrestamos;
+    }
+    
 	public String getId() {
 		return id;
 	}
