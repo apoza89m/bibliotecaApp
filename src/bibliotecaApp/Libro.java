@@ -26,16 +26,16 @@ public class Libro {
 		this.genero = genero;
 		this.ejemplosDisponibles = ejemplosDisponibles;
 		this.contadorPrestamos = 0;
-		
+
 	}
-	
+
 	public void retirarLibro() {
 		ejemplosDisponibles--;
-	    contadorPrestamos++;
+		contadorPrestamos++;
 	}
-	
+
 	public void devolverLibro() {
-	    ejemplosDisponibles++;
+		ejemplosDisponibles++;
 	}
 
 	public void consultaDisponibilidad() {
@@ -93,7 +93,5 @@ public class Libro {
 	public void setContadorPrestamos(int contadorPrestamos) {
 		this.contadorPrestamos = contadorPrestamos;
 	}
-	
-	
 
 }

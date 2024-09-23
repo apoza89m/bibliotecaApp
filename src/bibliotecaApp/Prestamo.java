@@ -18,8 +18,6 @@ public class Prestamo {
 		this.libro = libro;
 	}
 
-
-	
 	public LocalDate getFechaPrestamo() {
 		return fechaPrestamo;
 	}
@@ -57,7 +55,5 @@ public class Prestamo {
 		return "Prestamo [fechaPrestamo= " + fechaPrestamo + ", fechaDevolucion= " + fechaDevolucion + ", usuario= "
 				+ usuario.getNombre() + ", libro= " + libro.getTitulo() + "]";
 	}
-	
-	
 
 }

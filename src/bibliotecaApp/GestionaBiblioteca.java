@@ -7,7 +7,8 @@ public class GestionaBiblioteca {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Bienvenido a la bibliotecaApp");
+		System.out.println("Bienvenido a bibliotecaApp\n");
+		
 		Biblioteca biblioteca1 = new Biblioteca("La Colmena", "Calle Pepito Perez");
 
 		Libro libro1 = new Libro(1, "Cien años de soledad", "Gabriel", 1967, GeneroLibro.DRAMA, 5);
@@ -21,11 +22,11 @@ public class GestionaBiblioteca {
 		Libro libro8 = new Libro(8, "El mago de Oz", "L. Frank Baum", 1900, GeneroLibro.INFANTIL, 4);
 		Libro libro9 = new Libro(9, "Charlie y la fábrica de chocolate", "Roald Dahl", 1964, GeneroLibro.INFANTIL, 6);
 
-		Usuario usuario1 = new Usuario("U001", "Juan", "Lolailo", "juan.lolailo@example.com", "555-1234");
-		Usuario usuario2 = new Usuario("U002", "Ana", "Mellan", "ana.mellan@example.com", "555-5678");
-		Usuario usuario3 = new Usuario("U003", "Luis", "Cobol", "luis.cobol@example.com", "555-8765");
-		Usuario usuario4 = new Usuario("U004", "María", "Gonzalez", "maria.gonzalez@example.com", "555-4321");
-		Usuario usuario5 = new Usuario("U005", "Carlos", "Sainz", "carlos.sainz@example.com", "555-6789");
+		Usuario usuario1 = new Usuario("Juan", "Lolailo", "juan.lolailo@example.com", "555-1234");
+		Usuario usuario2 = new Usuario("Ana", "Mellan", "ana.mellan@example.com", "555-5678");
+		Usuario usuario3 = new Usuario("Luis", "Cobol", "luis.cobol@example.com", "555-8765");
+		Usuario usuario4 = new Usuario("María", "Gonzalez", "maria.gonzalez@example.com", "555-4321");
+		Usuario usuario5 = new Usuario("Carlos", "Sainz", "carlos.sainz@example.com", "555-6789");
 
 		biblioteca1.addLibro(libro1, libro2, libro3, libro4, libro5, libro6, libro7, libro8, libro9);
 		biblioteca1.addUsuario(usuario1, usuario2, usuario3, usuario4, usuario5);
